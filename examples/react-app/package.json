@@ -1,0 +1,19 @@
+{
+  "name": "example-react-app",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "build": "echo Reference example"
+  },
+  "dependencies": {
+    "@open-measure/react": "workspace:*",
+    "@open-measure/dest-ga4": "workspace:*",
+    "@open-measure/dest-meta": "workspace:*",
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.5.0"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "open-measure",
+  "private": true,
+  "packageManager": "pnpm@10.29.2",
+  "scripts": {
+    "build": "turbo build",
+    "test": "turbo test",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "clean": "turbo clean",
+    "changeset": "changeset",
+    "release": "pnpm build && changeset publish",
+    "generate-context": "tsx scripts/generate-llm-context.ts"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "@types/node": "^20.11.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.2.0",
+    "tsup": "^8.0.0",
+    "tsx": "^4.7.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.54.0",
+    "vitest": "^2.0.0"
+  }
+}

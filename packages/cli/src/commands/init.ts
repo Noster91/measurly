@@ -1,5 +1,4 @@
 import { writeFileSync, existsSync, mkdirSync } from 'node:fs'
-import { join } from 'node:path'
 
 type Flags = Record<string, string | boolean | undefined>
 

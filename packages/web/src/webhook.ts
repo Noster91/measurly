@@ -12,7 +12,7 @@ export const webhook = defineDestination<WebhookConfig>({
   version: '1.0.0',
   consentCategory: 'analytics',
   setup(config) {
-    let queue: Record<string, unknown>[] = []
+    const queue: Record<string, unknown>[] = []
     let timer: ReturnType<typeof setInterval> | null = null
     const batchSize = config.batchSize ?? 10
     const flushInterval = config.flushInterval ?? 5000

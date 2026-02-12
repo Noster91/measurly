@@ -38,7 +38,7 @@ export interface Inspector {
 export function createInspector(): Inspector {
   const events: InspectorEvent[] = []
 
-  const dest = defineDestination<{}>({
+  const dest = defineDestination<Record<string, never>>({
     name: 'inspector',
     version: '1.0.0',
     consentCategory: 'necessary',

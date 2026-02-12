@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/react",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React hooks and provider for Open Measure",
   "type": "module",
   "main": "./dist/index.cjs",

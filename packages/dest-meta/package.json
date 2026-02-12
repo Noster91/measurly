@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/dest-meta",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Meta Pixel destination for Open Measure",
   "type": "module",
   "main": "./dist/index.cjs",

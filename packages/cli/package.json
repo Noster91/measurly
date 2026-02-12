@@ -1,12 +1,14 @@
 {
   "name": "@open-measure/cli",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Non-interactive CLI for Open Measure",
   "type": "module",
   "bin": {
     "open-measure": "./dist/index.js"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsup",
     "test": "vitest run",

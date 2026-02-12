@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/dest-ga4",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Google Analytics 4 destination for Open Measure",
   "type": "module",
   "main": "./dist/index.cjs",

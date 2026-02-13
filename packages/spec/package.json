@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/spec",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "JSON schemas and event specifications for Open Measure",
   "type": "module",

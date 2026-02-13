@@ -1,5 +1,11 @@
 # @open-measure/web
 
+## 0.1.1
+
+### Patch Changes
+
+- 0f1bbb1: Add README documentation to all packages
+
 ## 0.1.0
 
 ### Minor Changes

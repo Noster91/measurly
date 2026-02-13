@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/capi",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Server-side conversion API for Open Measure",
   "type": "module",
   "main": "./dist/index.cjs",

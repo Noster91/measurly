@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Non-interactive CLI for Open Measure",
   "type": "module",
   "bin": {

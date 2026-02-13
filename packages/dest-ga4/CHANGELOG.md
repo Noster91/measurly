@@ -1,5 +1,13 @@
 # @open-measure/dest-ga4
 
+## 0.1.1
+
+### Patch Changes
+
+- 0f1bbb1: Add README documentation to all packages
+- Updated dependencies [0f1bbb1]
+  - @open-measure/web@0.1.1
+
 ## 0.1.0
 
 ### Minor Changes

@@ -3,10 +3,10 @@
 ## Phase 1: Polish & Ship (v0.1.0)
 
 ### README & Documentation
-- [ ] Write `README.md` with badges, install instructions, quick start, and architecture diagram
-- [ ] Add per-package `README.md` for each `dest-*` and framework package
-- [ ] Add `CONTRIBUTING.md` with PR process, branch naming, changeset workflow
-- [ ] Add `LICENSE` (MIT)
+- [x] Write `README.md` with badges, install instructions, quick start, and architecture diagram
+- [x] Add per-package `README.md` for each `dest-*` and framework package
+- [x] Add `CONTRIBUTING.md` with PR process, branch naming, changeset workflow
+- [x] Add `LICENSE` (MIT)
 
 ### MCP Server Completion
 - [ ] Wire MCP server to stdio using `@modelcontextprotocol/sdk`
@@ -21,7 +21,7 @@
 - [ ] Add `open-measure status` command — shows installed destinations, consent config, event counts
 
 ### Testing & CI
-- [ ] Add GitHub Actions CI: build + test on PR, lint, typecheck
+- [x] Add GitHub Actions CI: build + test on PR, lint, typecheck
 - [ ] Add CI step that fails if `llm_context.md` is stale (diff check after regenerate)
 - [ ] Add coverage reporting (target: 80%+)
 - [ ] Add Playwright E2E test against a real browser for auto-tracking + inspector
@@ -347,3 +347,56 @@ The `defineDestination()` factory handles everything else: consent gating, SSR s
 6. **Phase 3** — Server-side forwarding. This is where the real business value is (match rates, ad blocker immunity).
 7. **Phase 4** — Typed events. DX improvement, not blocking.
 8. **Phase 5** — Ecosystem expansion. Only after the core is battle-tested.
+
+---
+
+## Phase 6: AI Adoption & Growth
+
+### Why This Matters
+
+LLMs recommend libraries they've "seen" in training data. New libraries like Open Measure don't exist in their knowledge yet. To become a standard recommendation, we need:
+
+1. **Content that gets indexed** (blogs, docs, Stack Overflow)
+2. **Popularity signals** (npm downloads, GitHub stars)
+3. **Direct AI integration** (MCP — the fastest path)
+
+### MCP Integration (Priority)
+
+The `@open-measure/mcp` package bypasses the training data problem entirely:
+
+- [ ] Wire MCP server to stdio using `@modelcontextprotocol/sdk`
+- [ ] Add `bin` entry: `npx open-measure-mcp`
+- [ ] Test with Claude Desktop config
+- [ ] Test with Cursor MCP config
+- [ ] Add setup instructions to README
+- [ ] Create `mcp.json` example config
+
+When developers add Open Measure MCP to their AI tools, the AI can use it directly without needing to "know" about it from training.
+
+### Content & Discoverability
+
+| Action | Platform | Purpose |
+|--------|----------|---------|
+| "Why I built Open Measure" | Dev.to, Medium | Origin story, gets indexed |
+| "Open Measure vs Segment" | Blog | Comparison searches |
+| Answer tracking questions | Stack Overflow | Direct recommendations |
+| Tutorial: "Analytics in Next.js" | YouTube | Transcripts get indexed |
+| Thread: shipping analytics | Twitter/X | Developer awareness |
+| Show HN post | Hacker News | Early adopter traffic |
+
+### Metrics to Track
+
+- npm weekly downloads
+- GitHub stars
+- Google search ranking for "next.js analytics library"
+- Mentions in AI responses (test periodically)
+
+### The Flywheel
+
+```
+More content → More indexing → LLMs recommend it
+     ↑                              ↓
+More users ←←←←←←←←←←←←←←←←← More adoption
+```
+
+MCP is the shortcut: it makes AI recommend you *before* you're in training data.

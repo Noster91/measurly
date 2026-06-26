@@ -126,6 +126,7 @@ export function CheckoutButton({ orderId, total }) {
 | [`@open-measure/web`](./packages/web) | Core tracker engine |
 | [`@open-measure/react`](./packages/react) | React hooks and provider |
 | [`@open-measure/next`](./packages/next) | Next.js integration with auto page tracking |
+| [`@open-measure/svelte`](./packages/svelte) | Svelte 5 / SvelteKit integration with page tracking |
 | [`@open-measure/dest-ga4`](./packages/dest-ga4) | Google Analytics 4 destination |
 | [`@open-measure/dest-meta`](./packages/dest-meta) | Meta Pixel destination |
 | [`@open-measure/dest-posthog`](./packages/dest-posthog) | PostHog destination |

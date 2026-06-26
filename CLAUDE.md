@@ -30,6 +30,7 @@ packages/
   web/       — Core: tracker, types, Destination interface, presets, auto-tracking
   react/     — React hooks/provider (re-exports web)
   next/      — Next.js integration (re-exports react+web)
+  svelte/    — Svelte 5 / SvelteKit context + page tracking (re-exports web)
   dest-*/    — Destination plugins (ga4, meta, posthog, gtm)
   spec/      — JSON schemas (internal)
   cli/       — Non-interactive CLI

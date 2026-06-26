@@ -5,7 +5,7 @@ describe('posthog destination', () => {
   it('creates destination with correct metadata', () => {
     const dest = posthog({ apiKey: 'phc_test' })
     expect(dest.name).toBe('posthog')
-    expect(dest.version).toBe('1.0.0')
+    expect(dest.version).toBe('1.1.0')
     expect(dest.consentCategory).toBe('analytics')
   })
 
@@ -44,5 +44,25 @@ describe('posthog destination', () => {
   it('destroy does not throw in Node', () => {
     const dest = posthog({ apiKey: 'phc_test' })
     expect(() => dest.destroy?.()).not.toThrow()
+  })
+
+  it('onConsentChange does not throw in Node (both opt in and out)', () => {
+    const dest = posthog({ apiKey: 'phc_test' })
+    expect(() =>
+      dest.onConsentChange?.({
+        necessary: true,
+        analytics: true,
+        marketing: false,
+        personalization: false,
+      }),
+    ).not.toThrow()
+    expect(() =>
+      dest.onConsentChange?.({
+        necessary: true,
+        analytics: false,
+        marketing: false,
+        personalization: false,
+      }),
+    ).not.toThrow()
   })
 })

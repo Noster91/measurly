@@ -1,6 +1,6 @@
 {
   "name": "@open-measure/svelte",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Svelte 5 and SvelteKit integration for Open Measure",
   "type": "module",
   "main": "./dist/index.cjs",

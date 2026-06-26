@@ -8,4 +8,6 @@ export default defineConfig({
   sourcemap: true,
   splitting: false,
   treeshake: true,
+  // posthog-js is a runtime dependency — install it alongside, don't bundle it.
+  external: ['posthog-js'],
 })
